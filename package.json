@@ -1,0 +1,31 @@
+{
+  "name": "curso-waldemar",
+  "version": "1.0.0",
+  "description": "Typescript Node.js API",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/src/index.js",
+    "lint": "eslint ./src .test --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "api"
+  ],
+  "author": "João Oliveira",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.4",
+    "@types/node": "^20.9.3",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3"
+  }
+}
